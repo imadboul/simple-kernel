@@ -1,0 +1,15 @@
+hello world
+byeee world
+imad is the goat
+
+
+Flag	Value	Meaning
+O_RDONLY	0	Open for reading
+O_WRONLY	1	Open for writing
+O_RDWR	2	Open for reading + writing
+O_CREAT	64	Create if file doesn't exist
+O_EXCL	128	With O_CREAT, fail if already exists
+O_TRUNC	512	Empty/truncate existing file
+O_APPEND	1024	Writes go to end
+O_NONBLOCK	2048	Non-blocking mode
+
