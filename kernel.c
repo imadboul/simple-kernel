@@ -1,3 +1,4 @@
+#include "idt.h"
 #define VIDEO_MEMORY 0xB8000
 #define WHITE_ON_BLACK 0x0F
 
@@ -35,7 +36,11 @@ void kmain(void){
        
         clear_screen();
         print("Hello from C \n");
-        print("Not bad kidd\n");
+        idt_init();
+        print("IDT ready \n");
+
+        int x = 1 / 0;
+        print("NO EXCEPTION\n");
         while (1) { }    
 }
 
