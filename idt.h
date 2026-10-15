@@ -9,7 +9,6 @@ struct idt_entry
     unsigned char  zero;
     unsigned char  type_attr;
     unsigned short offset_high;
-    /* data */
 }__attribute__((packed));
 
 void idt_init(void);
